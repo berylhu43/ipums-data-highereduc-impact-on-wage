@@ -12,7 +12,7 @@ This project involves cleaning, exploring, and modeling census data obtained fro
 
 ## Data
 
-The raw data files are not included in this repository due to licensing restrictions and file size. You will need to obtain the data files separately from [IPUMS USA](https://usa.ipums.org/usa/).
+The raw data files are not included in this repository due to licensing restrictions and file size. You will need to obtain the data files separately from [IPUMS USA](https://usa.ipums.org/usa/) following the instructions in datasource.txt.
 
 ### Data Files
 
