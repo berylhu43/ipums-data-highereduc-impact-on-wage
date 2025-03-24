@@ -1,0 +1,58 @@
+ 1. First, navigate to the IPUMS USA website: https://usa.ipums.org/usa/index.shtml.4
+ 2. Choose “Browse and Select Data” from the menu on the left.
+ 3. Choose “Select Samples” by clicking the light blue box.
+ 4. Select the most current year of ACS data only. Do not include the 3 and 5-year versions of
+ the data.5 Then “Submit sample selections.”
+ 5. Nowyou get to go shopping for data.6 Under “Select Harmonized Variables”->
+ (a) “Person”-> “Demographics,” add the following to your cart
+ i. AGE
+ ii. SEX
+ iii. MARST
+ (b) “Person”-> “Family Interrelationship,” add the following to your cart
+   i. NCHILD
+ (c) “Person”-> “Race, Ethnicity and Nativity,” add the following to your cart
+ i. RACE
+ ii. HISPAN
+ (d) “Person”-> “Education,” add the following to your cart
+ i. EDUC
+ (e) “Person”-> “Work,” add the following to your cart
+ i. EMPSTAT
+ (f) “Person”-> “Income,” add the following to your cart
+ i. INCWAGE
+ (g) “Person”-> “Veteran Status,” add the following to your cart
+ i. VETSTAT
+ 6. Click on the “View Cart” button. Check to make sure you got everything. Click on the
+ “Create data extract” button.
+ 7. Click on “Customize sample sizes.”
+ (a) Since we’re dealing with a large sample from the national population, we have far more
+ observations than we can easily process. Under “Households,” enter “10” so the dataset
+ you create has 10,000 households. This makes working with the data easier, but will
+ still give us a “big data” dataset.7
+ (b) Click “Submit.”
+ 8. Click on “Select cases.”
+ (a) Since we’re looking at wages as a function of education, we’re only going to keep
+ those involved in the labor force. Select EMPSTAT. Just to be safe, let’s also restrict
+ our sample by age. Select AGE.
+ (b) Click “Submit.”
+ (c) Check “Include only those persons meeting case selection criteria.”
+ i. Under EMPSTAT, check the box for “Employed” workers.
+ ii. For AGE, select ages from 18 to 65.
+ (d) Click “Submit.”
+ 9. To the right of “Data Format,” click on “Change.”
+ (a) Select “Comma delimited (.csv)” or whatever your preferred format is.
+   (b) Select “Rectangular, person (default).”
+ (c) Click “Submit.”
+ 10. Give your extract a brief description.
+ 11. Click on the box that says “Submit extract.”
+ 12. Request an account or sign in.
+ 13. Finally, hit “Submit extract.”8
+ 14. Once your extract has been created, navigate to the IPUMS download page:
+ https://usa.ipums.org/usa-action/data_requests/download.
+ (a) Click on the “Download CSV” link (in the first column). Save the file to your hard
+ drive.
+ (b) Right-click on the “Basic” codebook file and save the *.cbk (text) file to your hard
+ drive.
+ (c) Unzip the data file and load the data in Python. For help unzipping a *.gz file (Unix’s
+ version of *.zip), check out “Step 2: Decompress the data file” here:
+ https://usa.ipums.org/usa/extract_instructions.shtml (just note that the instructions are
+ for the *.dat (text) file and you want the *.csv file)
